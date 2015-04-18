@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2297828F1AE1F20F003B5EB1 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8691AE12E87009B3184 /* WinViewController.swift */; };
 		235852611AE0855200B5510E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235852601AE0855200B5510E /* AppDelegate.swift */; };
 		235852631AE0855200B5510E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235852621AE0855200B5510E /* GameViewController.swift */; };
 		235852661AE0855200B5510E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235852641AE0855200B5510E /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		2E32A8611AE1257A009B3184 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8601AE1257A009B3184 /* Sound.swift */; };
 		2E32A8631AE1259F009B3184 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E32A8621AE1259F009B3184 /* AVFoundation.framework */; };
 		2E32A8681AE12E22009B3184 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8671AE12E22009B3184 /* MenuViewController.swift */; };
-		2E32A86A1AE12E87009B3184 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8691AE12E87009B3184 /* WinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,9 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2297828F1AE1F20F003B5EB1 /* WinViewController.swift in Sources */,
 				235852631AE0855200B5510E /* GameViewController.swift in Sources */,
 				2E32A8611AE1257A009B3184 /* Sound.swift in Sources */,
-				2E32A86A1AE12E87009B3184 /* WinViewController.swift in Sources */,
 				235852611AE0855200B5510E /* AppDelegate.swift in Sources */,
 				2E32A8681AE12E22009B3184 /* MenuViewController.swift in Sources */,
 			);

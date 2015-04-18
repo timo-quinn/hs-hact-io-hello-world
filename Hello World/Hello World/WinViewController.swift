@@ -20,4 +20,9 @@ class WinViewController: UIViewController {
         
         resultsLabel.text = s
     }
+    
+    @IBAction func tweet(sender: AnyObject) {
+        var tweetController = UIActivityViewController(activityItems: ["Check Out My High Score: \(resultValue)"], applicationActivities: nil)
+        self.presentViewController(tweetController, animated: true, completion: nil)
+    }
 }
