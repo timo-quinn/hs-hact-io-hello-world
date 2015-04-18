@@ -1,0 +1,8 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.49.3 clang-clang-602.0.49)"
+options: "88f1d6948b7e0340aee1a9cb683c35fc"
+inputs: 
+- "/Users/scoie/Desktop/Hello World/Hello World/GameViewController.swift"
+- "/Users/scoie/Desktop/Hello World/Hello World/Sound.swift"
+- "/Users/scoie/Desktop/Hello World/Hello World/WinViewController.swift"
+- "/Users/scoie/Desktop/Hello World/Hello World/AppDelegate.swift"
+- "/Users/scoie/Desktop/Hello World/Hello World/MenuViewController.swift"

@@ -16,7 +16,7 @@ class WinViewController: UIViewController {
         
         //append the result to the Result Label
         var s = "Result: "
-        s += String(resultValue)
+        s += String(format: "%.2f", resultValue)
         
         resultsLabel.text = s
     }

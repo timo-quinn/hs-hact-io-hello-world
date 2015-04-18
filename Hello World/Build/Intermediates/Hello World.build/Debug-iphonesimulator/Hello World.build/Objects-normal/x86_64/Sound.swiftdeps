@@ -6,20 +6,20 @@ nominals:
 class-members:
 top-level:
 - !private "NSURL"
-- !private "CFURLRef"
-- "SystemSoundID"
-- !private "AudioServicesPlaySystemSound"
-- "String"
-- !private "NSBundle"
-- !private "AudioServicesCreateSystemSoundID"
 - "IntegerLiteralType"
+- !private "NSBundle"
+- "SystemSoundID"
 - "FloatLiteralType"
+- !private "AudioServicesCreateSystemSoundID"
+- "String"
+- !private "CFURLRef"
+- !private "AudioServicesPlaySystemSound"
 member-access:
 - "C11Hello_World5Sound"
-- !private "CSo8NSBundle"
 - !private "CSo8NSObject"
-- !private "CSo5NSURL"
 - "PSs9AnyObject"
+- !private "CSo5NSURL"
+- !private "CSo8NSBundle"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

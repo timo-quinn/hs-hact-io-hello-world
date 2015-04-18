@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2297828F1AE1F20F003B5EB1 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8691AE12E87009B3184 /* WinViewController.swift */; };
 		235852611AE0855200B5510E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235852601AE0855200B5510E /* AppDelegate.swift */; };
 		235852631AE0855200B5510E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235852621AE0855200B5510E /* GameViewController.swift */; };
 		235852661AE0855200B5510E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235852641AE0855200B5510E /* Main.storyboard */; };
@@ -17,6 +16,8 @@
 		2E32A8611AE1257A009B3184 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8601AE1257A009B3184 /* Sound.swift */; };
 		2E32A8631AE1259F009B3184 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E32A8621AE1259F009B3184 /* AVFoundation.framework */; };
 		2E32A8681AE12E22009B3184 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8671AE12E22009B3184 /* MenuViewController.swift */; };
+		2E32A86A1AE12E87009B3184 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8691AE12E87009B3184 /* WinViewController.swift */; };
+		2E32A86C1AE1E4C4009B3184 /* smw_coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E32A86B1AE1E4C4009B3184 /* smw_coin.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2E32A8621AE1259F009B3184 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2E32A8671AE12E22009B3184 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		2E32A8691AE12E87009B3184 /* WinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
+		2E32A86B1AE1E4C4009B3184 /* smw_coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = smw_coin.wav; path = ../../smw_coin.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		2358525D1AE0855200B5510E /* Hello World */ = {
 			isa = PBXGroup;
 			children = (
+				2E32A86B1AE1E4C4009B3184 /* smw_coin.wav */,
 				2E32A8661AE126D1009B3184 /* Helpers */,
 				235852601AE0855200B5510E /* AppDelegate.swift */,
 				235852621AE0855200B5510E /* GameViewController.swift */,
@@ -217,6 +220,7 @@
 				235852661AE0855200B5510E /* Main.storyboard in Resources */,
 				2358526B1AE0855200B5510E /* LaunchScreen.xib in Resources */,
 				235852681AE0855200B5510E /* Images.xcassets in Resources */,
+				2E32A86C1AE1E4C4009B3184 /* smw_coin.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,9 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2297828F1AE1F20F003B5EB1 /* WinViewController.swift in Sources */,
 				235852631AE0855200B5510E /* GameViewController.swift in Sources */,
 				2E32A8611AE1257A009B3184 /* Sound.swift in Sources */,
+				2E32A86A1AE12E87009B3184 /* WinViewController.swift in Sources */,
 				235852611AE0855200B5510E /* AppDelegate.swift in Sources */,
 				2E32A8681AE12E22009B3184 /* MenuViewController.swift in Sources */,
 			);
@@ -369,6 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Hello World/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,6 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Hello World/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
