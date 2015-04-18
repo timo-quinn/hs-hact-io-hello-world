@@ -1,0 +1,4 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.49.3 clang-clang-602.0.49)"
+options: "6ea08380621708ebb1603ca425f4483d"
+inputs: 
+- "/Users/scoie/Desktop/Hello World/Hello WorldTests/Hello_WorldTests.swift"
