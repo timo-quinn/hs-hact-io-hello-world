@@ -2,16 +2,16 @@
 provides:
 - "MenuViewController"
 nominals:
-- "C11Hello_World18MenuViewController"
+- "C9HS_Tapped18MenuViewController"
 class-members:
 - "viewDidLoad"
 top-level:
 - "UIViewController"
 member-access:
 - "CSo8NSObject"
+- "PSs9AnyObject"
 - "CSo16UIViewController"
 - "CSo11UIResponder"
-- "PSs9AnyObject"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

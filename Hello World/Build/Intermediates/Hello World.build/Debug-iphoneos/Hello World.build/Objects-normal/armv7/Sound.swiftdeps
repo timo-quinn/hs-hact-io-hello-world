@@ -5,21 +5,21 @@ nominals:
 - "C11Hello_World5Sound"
 class-members:
 top-level:
-- !private "NSURL"
 - "SystemSoundID"
-- "IntegerLiteralType"
-- !private "AudioServicesCreateSystemSoundID"
-- "FloatLiteralType"
-- !private "NSBundle"
 - !private "CFURLRef"
 - !private "AudioServicesPlaySystemSound"
 - "String"
+- "IntegerLiteralType"
+- !private "NSBundle"
+- !private "NSURL"
+- "FloatLiteralType"
+- !private "AudioServicesCreateSystemSoundID"
 member-access:
-- !private "CSo5NSURL"
 - "PSs9AnyObject"
-- !private "CSo8NSObject"
 - "C11Hello_World5Sound"
+- !private "CSo8NSObject"
 - !private "CSo8NSBundle"
+- !private "CSo5NSURL"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

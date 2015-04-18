@@ -14,12 +14,15 @@ class GameViewController: UIViewController {
     
     var speed: NSTimeInterval = 1
     var counter = 0
+    var bonusModeCounter = 0
     var startTime: NSTimeInterval = 0
     var updateTimeTimer: NSTimer!
+    var bonusModeTimer: NSTimer!
     var buttonSound = Sound(name: "smw_coin", type: "wav")
+    var bonusMode = false
     
     // variable to hold the number of seconds elapsed
-    var secondsElapsed = 0
+    var secondsElapsed: Double = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,10 +51,18 @@ class GameViewController: UIViewController {
     }
 
     func tappedView(sender: AnyObject) {
-        counter += 1
+        
+        if bonusMode {
+            self.backgroundView.backgroundColor = self.randomColor()
+            self.startTime += 0.25
+            bonusModeCounter += 1
+        } else {
+            counter += 1
+            updateButton()
+            buttonSound.play()
+        }
+        
         updateView()
-        updateButton()
-        buttonSound.play()
     }
     
     func updateTimer() {
@@ -59,18 +70,30 @@ class GameViewController: UIViewController {
         self.timerLabel.text = String(format: "%.2f", seconds)
     }
     
+    func startBonusMode() {
+        bonusMode = true
+        self.bonusModeTimer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: Selector("stopBonusMode"), userInfo: nil, repeats: false)
+    }
+    
+    func stopBonusMode() {
+        bonusMode = false
+    }
+    
     func updateView() {
-        
         speed = 1 / Double(counter)
         
-        if counter >= 15 {
+        if counter % 10 == 0 {
+            startBonusMode()
+        }
+        
+        if counter >= 21 {
             //put the number of seconds into the secondsElapsed variable
-            secondsElapsed = Int(NSDate.timeIntervalSinceReferenceDate() - self.startTime)
+            secondsElapsed = NSDate.timeIntervalSinceReferenceDate() - self.startTime
 
             messageLabel.text = "Your Done!"
             performSegueWithIdentifier("showResults", sender: self)
         } else {
-            messageLabel.text = "Score: \(counter)"
+            messageLabel.text = "Score: \(counter) (\(bonusModeCounter))"
             self.updateTimeTimer = nil
         }
     }
@@ -107,6 +130,7 @@ class GameViewController: UIViewController {
         if (segue.identifier == "showResults") {
             var destViewController = segue.destinationViewController as! WinViewController;
             destViewController.resultValue = self.secondsElapsed
+            destViewController.bonusModeClicks = self.bonusModeCounter
         }
     }
 }

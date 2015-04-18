@@ -2,24 +2,24 @@
 provides:
 - "Sound"
 nominals:
-- "C11Hello_World5Sound"
+- "C9HS_Tapped5Sound"
 class-members:
 top-level:
+- !private "CFURLRef"
 - !private "NSURL"
-- "IntegerLiteralType"
-- !private "NSBundle"
+- !private "AudioServicesPlaySystemSound"
 - "SystemSoundID"
+- "IntegerLiteralType"
 - "FloatLiteralType"
 - !private "AudioServicesCreateSystemSoundID"
 - "String"
-- !private "CFURLRef"
-- !private "AudioServicesPlaySystemSound"
+- !private "NSBundle"
 member-access:
-- "C11Hello_World5Sound"
-- !private "CSo8NSObject"
+- "C9HS_Tapped5Sound"
 - "PSs9AnyObject"
-- !private "CSo5NSURL"
 - !private "CSo8NSBundle"
+- !private "CSo8NSObject"
+- !private "CSo5NSURL"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

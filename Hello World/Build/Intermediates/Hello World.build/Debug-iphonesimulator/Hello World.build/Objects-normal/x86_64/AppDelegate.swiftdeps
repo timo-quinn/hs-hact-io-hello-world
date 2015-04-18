@@ -2,29 +2,29 @@
 provides:
 - "AppDelegate"
 nominals:
-- "C11Hello_World11AppDelegate"
+- "C9HS_Tapped11AppDelegate"
 class-members:
-- "applicationWillResignActive"
+- "applicationDidEnterBackground"
 - "applicationWillTerminate"
-- "window"
+- "application"
+- "applicationWillResignActive"
 - "applicationDidBecomeActive"
 - "applicationWillEnterForeground"
-- "application"
-- "applicationDidEnterBackground"
+- "window"
 top-level:
-- "UIApplication"
-- "UIResponder"
-- "UIApplicationDelegate"
-- !private "BooleanLiteralType"
-- "Bool"
 - "UIWindow"
+- "UIResponder"
+- "UIApplication"
 - "NSObject"
 - "AnyObject"
+- "Bool"
+- !private "BooleanLiteralType"
+- "UIApplicationDelegate"
 member-access:
-- "C11Hello_World11AppDelegate"
-- "PSs9AnyObject"
 - "PSo21UIApplicationDelegate"
+- "C9HS_Tapped11AppDelegate"
 - "CSo8NSObject"
+- "PSs9AnyObject"
 - "CSo11UIResponder"
 dynamic-lookup:
 cross-module:

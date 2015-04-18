@@ -108,6 +108,7 @@ SWIFT_CLASS("_TtC11Hello_World11AppDelegate")
 @class UIView;
 @class NSTimer;
 @class UIColor;
+@class UIStoryboardSegue;
 @class UILabel;
 @class NSBundle;
 @class NSCoder;
@@ -120,17 +121,24 @@ SWIFT_CLASS("_TtC11Hello_World18GameViewController")
 @property (nonatomic) UIView * __null_unspecified tapMe;
 @property (nonatomic) NSTimeInterval speed;
 @property (nonatomic) NSInteger counter;
+@property (nonatomic) NSInteger bonusModeCounter;
 @property (nonatomic) NSTimeInterval startTime;
 @property (nonatomic) NSTimer * __null_unspecified updateTimeTimer;
+@property (nonatomic) NSTimer * __null_unspecified bonusModeTimer;
+@property (nonatomic) BOOL bonusMode;
+@property (nonatomic) double secondsElapsed;
 - (void)viewDidLoad;
 - (void)makeButton;
 - (void)tappedBackground;
 - (void)startGame;
 - (void)tappedView:(id __nonnull)sender;
 - (void)updateTimer;
+- (void)startBonusMode;
+- (void)stopBonusMode;
 - (void)updateView;
 - (UIColor * __nonnull)randomColor;
 - (void)updateButton;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __null_unspecified)sender;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -146,7 +154,11 @@ SWIFT_CLASS("_TtC11Hello_World18MenuViewController")
 
 SWIFT_CLASS("_TtC11Hello_World17WinViewController")
 @interface WinViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified resultsLabel;
+@property (nonatomic) double resultValue;
+@property (nonatomic) NSInteger bonusModeClicks;
 - (void)viewDidLoad;
+- (IBAction)tweet:(id __nonnull)sender;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

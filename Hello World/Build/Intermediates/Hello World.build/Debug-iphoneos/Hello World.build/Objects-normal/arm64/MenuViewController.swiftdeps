@@ -9,9 +9,9 @@ top-level:
 - "UIViewController"
 member-access:
 - "CSo16UIViewController"
-- "CSo8NSObject"
-- "PSs9AnyObject"
 - "CSo11UIResponder"
+- "PSs9AnyObject"
+- "CSo8NSObject"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Swift.swiftmodule"

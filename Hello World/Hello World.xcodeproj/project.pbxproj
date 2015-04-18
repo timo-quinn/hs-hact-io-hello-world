@@ -17,7 +17,7 @@
 		2E32A8631AE1259F009B3184 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E32A8621AE1259F009B3184 /* AVFoundation.framework */; };
 		2E32A8681AE12E22009B3184 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8671AE12E22009B3184 /* MenuViewController.swift */; };
 		2E32A86A1AE12E87009B3184 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32A8691AE12E87009B3184 /* WinViewController.swift */; };
-		2E32A86C1AE1E4C4009B3184 /* smw_coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E32A86B1AE1E4C4009B3184 /* smw_coin.wav */; };
+		2E32A86E1AE20C46009B3184 /* smw_coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E32A86D1AE20C46009B3184 /* smw_coin.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2358525B1AE0855200B5510E /* Hello World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2358525B1AE0855200B5510E /* HS Tapped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HS Tapped.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2358525F1AE0855200B5510E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		235852601AE0855200B5510E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		235852621AE0855200B5510E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		2E32A8621AE1259F009B3184 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2E32A8671AE12E22009B3184 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		2E32A8691AE12E87009B3184 /* WinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
-		2E32A86B1AE1E4C4009B3184 /* smw_coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = smw_coin.wav; path = ../../smw_coin.wav; sourceTree = "<group>"; };
+		2E32A86D1AE20C46009B3184 /* smw_coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_coin.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 		2358525C1AE0855200B5510E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2358525B1AE0855200B5510E /* Hello World.app */,
+				2358525B1AE0855200B5510E /* HS Tapped.app */,
 				235852701AE0855200B5510E /* Hello WorldTests.xctest */,
 			);
 			name = Products;
@@ -89,7 +89,7 @@
 		2358525D1AE0855200B5510E /* Hello World */ = {
 			isa = PBXGroup;
 			children = (
-				2E32A86B1AE1E4C4009B3184 /* smw_coin.wav */,
+				2E32A86D1AE20C46009B3184 /* smw_coin.wav */,
 				2E32A8661AE126D1009B3184 /* Helpers */,
 				235852601AE0855200B5510E /* AppDelegate.swift */,
 				235852621AE0855200B5510E /* GameViewController.swift */,
@@ -153,7 +153,7 @@
 			);
 			name = "Hello World";
 			productName = "Hello World";
-			productReference = 2358525B1AE0855200B5510E /* Hello World.app */;
+			productReference = 2358525B1AE0855200B5510E /* HS Tapped.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2358526F1AE0855200B5510E /* Hello WorldTests */ = {
@@ -220,7 +220,7 @@
 				235852661AE0855200B5510E /* Main.storyboard in Resources */,
 				2358526B1AE0855200B5510E /* LaunchScreen.xib in Resources */,
 				235852681AE0855200B5510E /* Images.xcassets in Resources */,
-				2E32A86C1AE1E4C4009B3184 /* smw_coin.wav in Resources */,
+				2E32A86E1AE20C46009B3184 /* smw_coin.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,9 +373,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Hello World/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "HS Tapped";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -386,9 +386,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Hello World/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "HS Tapped";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
